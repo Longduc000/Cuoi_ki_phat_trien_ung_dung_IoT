@@ -8,11 +8,20 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 + 1 cảm biến lửa
 + 1 quạt 5V 4x4x1cm
 + 1 động cơ servo sg90 180 độ
-+ 1 động cơ bơm nước
++ 1 động cơ bơm nước 5V
 + 2 relay 5V
 
 # Mô tả tự án
 Khi phát hiên nồng độ khói cao hơn ngưỡng quy định, còi cảnh báo sẽ kêu lên, cửa thoát hiểm tự động mở và quạt thông gió được bật để đưa hết khói ra ngoài. Còn khi phát hiện có lửa, động cơ bơm nước được bật để dập tắt ngọn lửa. 
+
+# Mô tả kết nối:
+- Cảm biến khí MQ2: chân A0 nối với chân D4 của esp32, dùng để đo nồng độ khói
+- Cảm biến lửa: chân D0 nối với chân D34 của esp32, dùng để phát hiện lửa
+- Còi buzzer 1: kết nối với chân D14 của esp32, dùng để cảnh báo khi phát hiện nồng độ khói vượt mức bình thường
+- Còi buzzer 2: kết nối với chân D23 của esp32, dùng để cảnh báo khi phát hiện lửa
+- Động cơ servo: kết nối với chân D2 của esp32, dùng để mở cửa thoát hiểm
+- Quạt 5V nối với relay 1, và relay 1 nối với chân D18 của esp32, dùng để bật tắt quạt
+- Động cơ bơm nước %v nối với relay 2, và relay 2 nối với chân D25 của esp32, dùng để bật tắt động cơ bơm nước
 
 # Sơ đồ khối
 ![Editing Cuoi_ki_phat_trien_ung_dung_IoT_README md at main · Longduc000_Cuoi_ki_phat_trien_ung_dung_IoT - Cốc Cốc 12_30_2024 9_36_07 AM png 12_30_2024 10_25_18 AM](https://github.com/user-attachments/assets/1e40643a-b1a2-495d-abb1-cd80993b554c)

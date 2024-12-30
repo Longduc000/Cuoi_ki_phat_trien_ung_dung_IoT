@@ -10,6 +10,10 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 + 1 động cơ servo sg90 180 độ
 + 1 động cơ bơm nước
 + 2 relay 5V
+
+# Mô tả tự án
+Khi phát hiên nồng độ khói cao hơn ngưỡng quy định, còi cảnh báo sẽ kêu lên, cửa thoát hiểm tự động mở và quạt thông gió được bật để đưa hết khói ra ngoài. Còn khi phát hiện có lửa, động cơ bơm nước được bật để dập tắt ngọn lửa. 
+
 # Sơ đồ khối
 ![Editing Cuoi_ki_phat_trien_ung_dung_IoT_README md at main · Longduc000_Cuoi_ki_phat_trien_ung_dung_IoT - Cốc Cốc 12_30_2024 9_36_07 AM png 12_30_2024 10_25_18 AM](https://github.com/user-attachments/assets/1e40643a-b1a2-495d-abb1-cd80993b554c)
 

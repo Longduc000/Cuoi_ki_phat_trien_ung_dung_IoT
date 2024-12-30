@@ -22,9 +22,11 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 
 - Cập nhật thông số cảm biến lên dashboard
 + Khi không phát hiện có lửa
+chỉ số khói là dưới 500ppm và giá trị cảm biến lửa khi không phát hiện lửa luôn là 1
 ![Node-RED _ Flow 2 - Cốc Cốc 12_30_2024 10_32_46 AM](https://github.com/user-attachments/assets/4ab0815e-8d62-4886-ac19-06a6dc1d8077)
 
 + Khi phát hiện có lửa
+chỉ số khói sẽ vượt 500ppm và giá trị cảm biến lửa khi phát hiện có lửa sẽ luôn là 0
 ![Captures - File Explorer 12_30_2024 10_34_16 AM](https://github.com/user-attachments/assets/3be7932a-551a-4db4-ab02-5e8ee309ec19)
 
 

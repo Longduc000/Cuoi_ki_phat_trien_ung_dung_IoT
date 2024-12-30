@@ -13,4 +13,7 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 
 ![sơ đồ hệ thống báo cháy drawio - draw io - Cốc Cốc 12_30_2024 8_29_29 AM](https://github.com/user-attachments/assets/cd159f8e-fa22-47d8-95f5-7c342b0bc8c7)
 
-#
+# Danh sách kết nối
+- cảm biến khí MQ2 nối với esp32
++
+

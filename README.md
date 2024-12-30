@@ -25,3 +25,7 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 
 + Khi phát hiện có lửa
 ![Node-RED Dashboard - Cốc Cốc 12_30_2024 9_25_16 AM](https://github.com/user-attachments/assets/fa37b216-8b69-44e9-a6f1-069967345ccb)
+
+
+# Quá trình demo project
+Nằm trong folder "video demo" bên trên

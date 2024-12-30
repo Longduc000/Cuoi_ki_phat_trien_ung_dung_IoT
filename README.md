@@ -21,7 +21,7 @@ Khi phát hiên nồng độ khói cao hơn ngưỡng quy định, còi cảnh b
 - Còi buzzer 2: kết nối với chân D23 của esp32, dùng để cảnh báo khi phát hiện lửa
 - Động cơ servo: kết nối với chân D2 của esp32, dùng để mở cửa thoát hiểm
 - Quạt 5V nối với relay 1, và relay 1 nối với chân D18 của esp32, dùng để bật tắt quạt
-- Động cơ bơm nước %v nối với relay 2, và relay 2 nối với chân D25 của esp32, dùng để bật tắt động cơ bơm nước
+- Động cơ bơm nước 5V nối với relay 2, và relay 2 nối với chân D25 của esp32, dùng để bật tắt động cơ bơm nước
 
 # Sơ đồ khối
 ![Editing Cuoi_ki_phat_trien_ung_dung_IoT_README md at main · Longduc000_Cuoi_ki_phat_trien_ung_dung_IoT - Cốc Cốc 12_30_2024 9_36_07 AM png 12_30_2024 10_25_18 AM](https://github.com/user-attachments/assets/1e40643a-b1a2-495d-abb1-cd80993b554c)

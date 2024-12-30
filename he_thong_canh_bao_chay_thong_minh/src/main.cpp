@@ -15,12 +15,12 @@ const int servo1Pin = 2;
 const int relay_quat = 18;
 
 const int cam_bien_lua= 34;  // Chân kết nối cảm biến lửa (input)
-const int buzzer_lua =26 ;      // Chân kết nối còi buzzer (output)
+const int buzzer_lua =23 ;      // Chân kết nối còi buzzer (output)
 const int relay_may_bom= 25 ;       // Chân kết nối relay điều khiển máy bơm (output)
 // Giá trị ngưỡng cho mức khí độc
 int smokeThreshold = 2000;
 // Khởi tạo đối tượng động cơ servo
-Servo servo1; 
+Servo servo; 
 
 namespace
 {
@@ -28,6 +28,8 @@ namespace
     const char *password = WiFiSecrets::pass;
     const char *mq2Pin_topic = "esp32/mq2Pin_sensor";
     const char *cam_bien_lua_topic = "esp32/cam_bien_lua";
+    const char *canh_bao_khoi_topic = "esp32/canh_bao_khoi";  
+    const char *canh_bao_lua_topic = "esp32/canh_bao_lua";    
     unsigned int publish_count = 0;
     
     uint16_t keepAlive = 15;    // seconds (default is 15)
@@ -48,15 +50,19 @@ void mqttPublish()
   Serial.println(smoke);
   mqttClient.publish(mq2Pin_topic, String(smoke).c_str(), false);
   // Kiểm tra nếu giá trị khí độc vượt quá ngưỡng
+
+
+
   if (smoke > smokeThreshold) {
     digitalWrite(buzzer_khoi, HIGH);  // Kích hoạt còi
     pinMode(relay_quat, OUTPUT);
-    servo1.write(90);  // Quay động cơ servo 1 về giữa   
+    servo.write(0);  // Quay động cơ servo 1 về giữa
+    mqttClient.publish(canh_bao_khoi_topic, String("Phát hiện có khói!").c_str(), false);   
   }
   else {
     digitalWrite(buzzer_khoi, LOW);  // Tắt còi
     pinMode(relay_quat, INPUT);  // Tắt quạt
-    servo1.write(180);  // Động cơ servo 1 ở vị trí ban đầu
+    servo.write(90);  // Động cơ servo 1 ở vị trí ban đầu
   }
 
   // đọc giá trị cảm biến lửa
@@ -69,6 +75,7 @@ void mqttPublish()
   if (fire == 0) {
     pinMode(relay_may_bom, OUTPUT);
     digitalWrite(buzzer_lua, HIGH);
+    mqttClient.publish(canh_bao_lua_topic, String("Phát hiện có cháy!").c_str(), false);  
   }
   else {
     digitalWrite(buzzer_lua, LOW);
@@ -129,14 +136,15 @@ void setup()
   // Khởi tạo chân kết nối cho các thiết bị
   pinMode(mq2Pin, INPUT);
   pinMode(buzzer_khoi, OUTPUT);
-
+  pinMode(relay_quat, OUTPUT);
   pinMode(cam_bien_lua, INPUT);
   pinMode(buzzer_lua, OUTPUT);
+  pinMode(relay_may_bom, OUTPUT);
 
-  servo1.attach(servo1Pin);
+  servo.attach(servo1Pin);
 
   // Đưa động cơ servo về vị trí ban đầu
-  servo1.write(180);
+  servo.write(90);
 }
 
 void loop()
@@ -147,3 +155,4 @@ void loop()
     }
     mqttClient.loop();
 }
+

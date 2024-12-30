@@ -21,11 +21,11 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 ![Editing Cuoi_ki_phat_trien_ung_dung_IoT_README md at main · Longduc000_Cuoi_ki_phat_trien_ung_dung_IoT - Cốc Cốc 12_30_2024 9_36_07 AM](https://github.com/user-attachments/assets/cbbd5570-e251-4ef3-87bf-432e18456220)
 
 - Cập nhật thông số cảm biến lên dashboard
-+ Khi không phát hiện có lửa
+1) Khi không phát hiện có lửa
 chỉ số khói là dưới 500ppm và giá trị cảm biến lửa khi không phát hiện lửa luôn là 1
 ![Node-RED _ Flow 2 - Cốc Cốc 12_30_2024 10_32_46 AM](https://github.com/user-attachments/assets/4ab0815e-8d62-4886-ac19-06a6dc1d8077)
 
-+ Khi phát hiện có lửa
+2) Khi phát hiện có lửa
 chỉ số khói sẽ vượt 500ppm và giá trị cảm biến lửa khi phát hiện có lửa sẽ luôn là 0
 ![Captures - File Explorer 12_30_2024 10_34_16 AM](https://github.com/user-attachments/assets/3be7932a-551a-4db4-ab02-5e8ee309ec19)
 

@@ -11,7 +11,8 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 + 1 động cơ bơm nước
 + 2 relay 5V
 # Sơ đồ khối
-![Downloads - File Explorer 12_30_2024 9_29_31 AM](https://github.com/user-attachments/assets/27b91537-25ef-497a-8748-8464e40b3865)
+![Editing Cuoi_ki_phat_trien_ung_dung_IoT_README md at main · Longduc000_Cuoi_ki_phat_trien_ung_dung_IoT - Cốc Cốc 12_30_2024 9_36_07 AM png 12_30_2024 10_25_18 AM](https://github.com/user-attachments/assets/1e40643a-b1a2-495d-abb1-cd80993b554c)
+
 # Gửi cảnh báo và cập nhật thông số
 - Khi phát hiện có gửi, thông báo được gửi lên HiveMQ
 ![gửi tin nhắn lên hivemq](https://github.com/user-attachments/assets/64567edb-0d9f-4926-9693-376cb61f7b3e)
@@ -21,10 +22,11 @@ Hỏa hoạn là một trong những nguy cơ gây thiệt hại nghiêm trọng
 
 - Cập nhật thông số cảm biến lên dashboard
 + Khi không phát hiện có lửa
-![Node-RED Dashboard - Cốc Cốc 12_30_2024 9_22_33 AM](https://github.com/user-attachments/assets/68fbd429-9969-4985-b40e-656b018b6c7e)
+![Node-RED _ Flow 2 - Cốc Cốc 12_30_2024 10_32_46 AM](https://github.com/user-attachments/assets/4ab0815e-8d62-4886-ac19-06a6dc1d8077)
 
 + Khi phát hiện có lửa
-![Node-RED Dashboard - Cốc Cốc 12_30_2024 9_25_16 AM](https://github.com/user-attachments/assets/fa37b216-8b69-44e9-a6f1-069967345ccb)
+![Captures - File Explorer 12_30_2024 10_34_16 AM](https://github.com/user-attachments/assets/3be7932a-551a-4db4-ab02-5e8ee309ec19)
+
 
 
 # Quá trình demo project

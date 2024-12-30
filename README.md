@@ -48,14 +48,14 @@ chỉ số khói sẽ vượt 500ppm và giá trị cảm biến lửa khi phát
 Nằm trong folder "video demo" bên trên
 
 # Kết luận
-   Nói chung dự án này đã đáp ứng được hầu hết các mục tiêu được đề ra:
+1) Nói chung dự án này đã đáp ứng được hầu hết các mục tiêu được đề ra:
 - Cảm biến MQ2 đã giúp cho hệ thống có thể phát hiện được sớm sự thay đổi lượng khói trong không khí, giúp chúng ta có thể xử lí kịp thời khi phát hiện cháy nổ
 - Khả năng gửi tin nhắn từ xa thông qua giao thức MQTT giúp chúng ta có thể theo dõi liên tục tình trạng ổn định, sự an toàn về phía nơi ở của mình khi ở mọi nơi
 - Việc xây dựng dự án này tốn chi phí không nhiều, phù hợp với một số gia đình thu nhập ở mức trung bình
-  Tuy nhiên, vẫn tồn tại một số nhược điểm:
+2) Tuy nhiên, vẫn tồn tại một số nhược điểm:
 - Động cơ bơm nước không đủ mạnh để dập tắt toàn bộ đám cháy, và động cơ quạt cũng quá nhỏ để thu hết không khí ra ngày
 - Các cảm biến có chính xác hay không còn phụ thuộc và các yếu tố môi trường
-   Hướng phát triển trong tương lai:
+3) Hướng phát triển trong tương lai:
 - Nâng cao độ chính xác của cảm biến
 - Cải thiện chất lượng hệ thống dập tắt đám cháy và quạt thông gió
 
